@@ -5,6 +5,8 @@
  */
 package javaapplication;
 
+import java.util.Arrays;
+
 /**
  *
  * @author oko
@@ -15,7 +17,11 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("Hello, world!");
+        String input = "OTTO KAI      EVA TITO   ";
+        
+        String[] tokens = input.split("\\s+");
+        
+        System.out.println(Arrays.toString(tokens));
     }
     
 }
